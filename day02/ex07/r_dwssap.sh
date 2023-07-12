@@ -1,7 +1,7 @@
 #!/bin/sh
 
-export FT_LINE1=3
-export FT_LINE2=8
+export FT_LINE1
+export FT_LINE2
 
 cat /etc/passwd | \
     grep -v '\#' | \

@@ -6,7 +6,7 @@
 /*   By: lnagda <lnagda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:59:44 by lnagda            #+#    #+#             */
-/*   Updated: 2023/07/12 10:56:59 by lnagda           ###   ########.fr       */
+/*   Updated: 2023/07/12 15:41:30 by lnagda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ void	ft_print_reverse_alphabet(void)
 	while (ch >= 'a')
 	{
 		ft_putchar(ch);
-		ft_putchar('\n');
 		ch--;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: lnagda <lnagda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:51:30 by lnagda            #+#    #+#             */
-/*   Updated: 2023/07/12 10:57:01 by lnagda           ###   ########.fr       */
+/*   Updated: 2023/07/12 15:41:13 by lnagda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,6 @@ void	ft_print_alphabet(void)
 	while (ch <= 'z')
 	{
 		ft_putchar(ch);
-		ft_putchar('\n');
 		ch++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_alphabet();
-	return (0);
 }

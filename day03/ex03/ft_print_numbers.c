@@ -6,7 +6,7 @@
 /*   By: lnagda <lnagda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 18:01:33 by lnagda            #+#    #+#             */
-/*   Updated: 2023/07/12 10:56:58 by lnagda           ###   ########.fr       */
+/*   Updated: 2023/07/12 15:42:18 by lnagda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,6 @@ void	ft_print_numbers(void)
 	while (digit <= '9')
 	{
 		ft_putchar(digit);
-		ft_putchar('\n');
 		digit++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_numbers();
-	return (0);
 }
