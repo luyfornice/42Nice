@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnagda <lnagda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/11 18:01:33 by lnagda            #+#    #+#             */
-/*   Updated: 2023/07/12 10:56:58 by lnagda           ###   ########.fr       */
+/*   Created: 2023/07/12 11:27:05 by lnagda            #+#    #+#             */
+/*   Updated: 2023/07/12 11:55:23 by lnagda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,31 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_print_numbers(void)
+void	ft_print_comb2(void)
 {
-	char	digit;
+	int	a;
+	int	b;
 
-	digit = '0';
-	while (digit <= '9')
+	a = 0;
+	while (a <= 100)
 	{
-		ft_putchar(digit);
-		ft_putchar('\n');
-		digit++;
+		b = a;
+		while (b <= 99)
+		{
+			if (a != b)
+			{
+				ft_putchar(a / 10 + '0');
+				ft_putchar(a % 10 + '0');
+				write(1, " ", 1);
+				ft_putchar(b / 10 + '0');
+				ft_putchar(b % 10 + '0');
+				if (a != 98)
+				{
+					write(1, ", ", 2);
+				}
+			}
+			b++;
+		}
+		a++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_numbers();
-	return (0);
 }
