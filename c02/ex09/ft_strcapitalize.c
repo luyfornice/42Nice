@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lnagda <lnagda@student.42.fr>              +#+  +:+       +#+        */
+/*   By: luynagda <luynagda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 09:31:45 by lnagda            #+#    #+#             */
-/*   Updated: 2023/07/13 15:46:09 by lnagda           ###   ########.fr       */
+/*   Updated: 2023/07/13 19:32:59 by luynagda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_charupcase(char *str, int i)
+char	*ft_charupcase(char *str, int i)
 {
 	if (str[i] >= 'a' && str[i] <= 'z')
 	{
 		str[i] = str[i] - 32;
 	}
+	return (str);
 }
 
 void	*ft_charlowcase(char *str, int i)
@@ -24,6 +25,7 @@ void	*ft_charlowcase(char *str, int i)
 	{
 		str[i] = str[i] + 32;
 	}
+	return (str);
 }
 
 int	ft_char_is_alpha(char *str, int i)
