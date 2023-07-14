@@ -6,7 +6,7 @@
 /*   By: luynagda <luynagda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 09:31:45 by lnagda            #+#    #+#             */
-/*   Updated: 2023/07/13 19:32:59 by luynagda         ###   ########.fr       */
+/*   Updated: 2023/07/14 08:43:34 by luynagda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_charupcase(char *str, int i)
 	return (str);
 }
 
-void	*ft_charlowcase(char *str, int i)
+char	*ft_charlowcase(char *str, int i)
 {
 	if (str[i] >= 'A' && str[i] <= 'Z')
 	{
